@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "meyer-risk-measures"
+version = "0.1.0"
+description = "Meyer risk measures and return risk measure primitives"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.26",
+    "scipy>=1.14",
+    "pandas>=2.2",
+    "matplotlib",
+    "seaborn",
+    "statsmodels>=0.14",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*", "data*", "exp*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

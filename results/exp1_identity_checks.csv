@@ -1,0 +1,7 @@
+check,pass,max_diff
+rho_0_equals_ES,True,0.0
+rho_lam1_equals_rho_w,True,0.0
+self_benchmark_zero,True,0.0
+step_profile_reduction,True,0.0
+lambda_continuity,True,0.0
+monotonicity_in_p,True,0.0
